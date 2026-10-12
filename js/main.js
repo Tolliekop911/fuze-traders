@@ -134,7 +134,8 @@
     }, 1600);
   }
 
-  // contact form -> opens mail client (address not shown on site)
+  // contact form -> opens Gmail compose addressed to Fuze
+  var FUZE_EMAIL = "Brian.Griffin@fuzetraders.com";
   var form = document.getElementById("contactForm");
   if (form) {
     form.addEventListener("submit", function (ev) {
@@ -142,9 +143,11 @@
       var g = function (id){ var el=document.getElementById(id); return el?el.value.trim():""; };
       var subject = "Fuze Traders enquiry — " + (g("type") || "General");
       var body = "Name: "+g("name")+"\nCompany: "+g("company")+"\nEmail: "+g("email")+"\nInterested in: "+g("type")+"\n\n"+g("msg");
-      window.location.href = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      var url = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(FUZE_EMAIL) +
+                "&su=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.open(url, "_blank", "noopener");
       var note = document.getElementById("formNote");
-      if (note) note.textContent = "Opening your email app — add our address and send, or we'll follow up shortly.";
+      if (note) note.textContent = "Opening Gmail… if it doesn't appear, email us at " + FUZE_EMAIL;
     });
   }
 })();
