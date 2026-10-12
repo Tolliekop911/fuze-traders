@@ -184,6 +184,21 @@ header.nav.scrolled{border-color:var(--line2)}
 .band p{color:var(--muted);margin-top:16px;max-width:44ch}
 .band .bcta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
 .chart{width:100%;height:auto;display:block}
+/* live depositor-flow chart */
+.chart-live{border:1px solid var(--line);border-radius:10px;background:rgba(0,0,0,.18);padding:16px 16px 10px;overflow:hidden}
+.chart-head{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;margin-bottom:6px}
+.chart-head .cl{color:var(--dim)}
+.chart-head .cd{color:var(--up);display:inline-flex;align-items:center;gap:7px}
+.chart-head .cd::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--up);box-shadow:0 0 0 0 rgba(40,199,111,.6);animation:pulse2 1.6s infinite}
+@keyframes pulse2{0%{box-shadow:0 0 0 0 rgba(40,199,111,.5)}70%{box-shadow:0 0 0 6px rgba(40,199,111,0)}100%{box-shadow:0 0 0 0 rgba(40,199,111,0)}}
+#depChart{width:100%;height:190px;display:block}
+#depChart .wick{stroke-width:1.4}
+#depChart .cbody{transition:y .5s ease,height .5s ease}
+#depChart .flowline{fill:none;stroke:var(--orange);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round;transition:d .5s ease}
+#depChart .flowarea{transition:d .5s ease}
+#depChart .tip{animation:tipglow 1.4s ease-in-out infinite}
+@keyframes tipglow{0%,100%{r:4}50%{r:6}}
+@media(prefers-reduced-motion:reduce){.chart-head .cd::before{animation:none}#depChart .tip{animation:none}#depChart .cbody,#depChart .flowline,#depChart .flowarea{transition:none}}
 
 /* ---------- benefits ---------- */
 .bens{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
