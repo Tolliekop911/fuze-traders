@@ -7,32 +7,26 @@
 <meta name="description" content="Talk to Fuze Traders about qualified broker lead traffic, hot transfers and affiliate partnerships.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=1">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
 <header class="nav" id="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="index.html" aria-label="Fuze Traders home">
-      <span class="logo" aria-hidden="true">
-        <svg viewBox="0 0 40 40" fill="none">
-          <rect x="1.5" y="1.5" width="37" height="37" rx="10" fill="#0F172A"/>
-          <path d="M14 11h13.5l-1.6 5.1H17.6l-.9 3h7.1l-1.5 4.8h-7.1L13.3 29H8.4L14 11z" fill="#fff"/>
-          <path d="M26 19c2.8 1.3 4.4 3.2 4.4 5.6 0 3.2-2.7 5.4-6 5.4-1.2 0-2.3-.3-3.2-.8l1.5-4.1c.5.3 1 .5 1.6.5 1 0 1.7-.6 1.7-1.5 0-.8-.6-1.3-1.8-1.9-.2-.1-.4-.2-.6-.3L26 19z" fill="#FF5A00"/>
-        </svg>
-      </span>
-      <b>FUZE</b><span>&nbsp;TRADERS</span>
+    <a class="brand" href="index.html" aria-label="Fuze Traders">
+      <span class="logo"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 1l3.6 9.1L29 13l-7.3 3.1L16 31l-5.7-14.9L3 13l9.4-2.9z" fill="#FF5A00"/><path d="M16 9l1.7 4.3L22 15l-4.3 1.7L16 23l-1.7-6.3L10 15l4.3-1.7z" fill="#070B14"/></svg></span>
+      <span class="b">FUZE</span><span class="sl">//</span><span class="o">TRADERS</span>
     </a>
     <nav class="nav-links" id="navlinks">
-      <a href="index.html#solutions">Solutions</a>
-      <a href="index.html#affiliates">Affiliates</a>
-      <a href="index.html#brokers">Brokers</a>
-      <a href="index.html#why">Why Fuze</a>
+      <a href="index.html#solutions">[01] Solutions</a>
+      <a href="index.html#affiliates">[02] Affiliates</a>
+      <a href="index.html#brokers">[03] Brokers</a>
+      <a href="index.html#why">[04] Why Fuze</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav-cta">
-      <a href="index.html" class="btn btn-ghost">Back to home</a>
+      <a href="index.html" class="btn btn-line">Back to home</a>
       <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -41,57 +35,38 @@
 <section class="sec">
   <div class="wrap">
     <div class="sec-head reveal" style="margin-bottom:46px">
-      <span class="eyebrow">Ready to talk</span>
-      <h2>Let's light the fuze.</h2>
-      <p class="lead">Whether you're a broker who needs qualified depositor flow or an affiliate chasing top-tier payouts — tell us what you're after and we'll get back fast.</p>
+      <div class="l">
+        <span class="sec-n">[ CONTACT ]</span>
+        <h2>Light the fuze.</h2>
+        <p class="lead">Broker after qualified depositor flow, or an affiliate chasing top-tier payouts? Tell us what you're after — we'll come back fast.</p>
+      </div>
+      <div class="r">RESPONSE<br>&lt; 24h</div>
     </div>
 
     <div class="contact-grid">
       <form class="form reveal" id="contactForm">
-        <div class="field">
-          <label for="name">Full name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required>
-        </div>
-        <div class="field">
-          <label for="company">Company</label>
-          <input id="company" name="company" type="text" placeholder="Brokerage or affiliate brand">
-        </div>
-        <div class="field">
-          <label for="email">Work email</label>
-          <input id="email" name="email" type="email" placeholder="you@company.com" required>
-        </div>
-        <div class="field">
-          <label for="type">I'm interested in</label>
-          <select id="type" name="type">
+        <div class="field"><label for="name">Full name</label><input id="name" type="text" placeholder="Your name" required></div>
+        <div class="field"><label for="company">Company</label><input id="company" type="text" placeholder="Brokerage or affiliate brand"></div>
+        <div class="field"><label for="email">Work email</label><input id="email" type="email" placeholder="you@company.com" required></div>
+        <div class="field"><label for="type">I'm interested in</label>
+          <select id="type">
             <option>Broker — I need qualified traffic</option>
             <option>Affiliate — I want to join the network</option>
             <option>Direct calls &amp; hot transfers</option>
             <option>Something else</option>
           </select>
         </div>
-        <div class="field">
-          <label for="msg">Message</label>
-          <textarea id="msg" name="msg" placeholder="Tell us about your targets, volumes or GEOs."></textarea>
-        </div>
+        <div class="field"><label for="msg">Message</label><textarea id="msg" placeholder="GEOs, volumes, verticals…"></textarea></div>
         <button type="submit" class="btn btn-primary">Send message
-          <svg width="16" height="12" viewBox="0 0 20 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6h17M13 1l5 5-5 5"/></svg>
+          <svg width="16" height="12" viewBox="0 0 20 12" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 6h17M13 1l5 5-5 5"/></svg>
         </button>
-        <p class="form-note" id="formNote">This opens your email app, pre-addressed to our team.</p>
+        <p class="form-note" id="formNote">Opens your email app — nothing is stored on this page.</p>
       </form>
 
-      <div class="contact-side reveal">
-        <div class="ci">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></svg></span>
-          <div><h3>Email us</h3><p>Reach the team directly at<br><a href="mailto:ptsnmn@gmail.com">ptsnmn@gmail.com</a></p></div>
-        </div>
-        <div class="ci">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h2l1.7 4-2 1.3a12 12 0 005.5 5.5l1.3-2 4 1.7v2a2.5 2.5 0 01-2.7 2.5A16.5 16.5 0 014 5.7 2.5 2.5 0 016.5 3z"/></svg></span>
-          <div><h3>Hot transfers</h3><p>Ask us about routing interested leads straight to your sales or retention desk.</p></div>
-        </div>
-        <div class="ci">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
-          <div><h3>Compliance-first</h3><p>We work to regulatory standards and deliver non-incentivised, filtered leads.</p></div>
-        </div>
+      <div class="cside reveal">
+        <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-9"/><path d="M21 7v5h-5"/></svg></span><div><h3>For brokers</h3><p>High volumes of qualified trader traffic with zero downtime, routed to your desk.</p></div></div>
+        <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3.2"/><path d="M4 20c0-3.3 3.6-5.5 8-5.5s8 2.2 8 5.5"/></svg></span><div><h3>For affiliates</h3><p>Top-tier payouts, advanced tracking and ready-made creatives that convert.</p></div></div>
+        <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div><h3>Compliance-first</h3><p>Non-incentivised, filtered leads delivered to regulatory standards.</p></div></div>
       </div>
     </div>
   </div>
@@ -99,13 +74,13 @@
 
 <footer class="ft">
   <div class="wrap">
-    <div class="ft-bot" style="border-top:0">
-      <span>© <span id="yr"></span> Fuze Traders. All rights reserved.</span>
+    <div class="ft-bot" style="border-top:0;padding-top:0">
+      <span class="cp">© <span id="yr"></span> FUZE//TRADERS</span>
       <span class="risk">Trading carries risk. Fuze Traders provides marketing and lead-generation services and is not a broker, financial adviser, or investment firm.</span>
     </div>
   </div>
 </footer>
 
-<script src="js/main.js?v=1"></script>
+<script src="js/main.js?v=2"></script>
 </body>
 </html>
