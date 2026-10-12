@@ -3,9 +3,9 @@
    Near-black navy desk, ignition-orange signal, monospace data accents.
    ====================================================================== */
 :root{
-  --bg:#070B14;
-  --bg2:#0C1222;
-  --bg3:#111A2E;
+  --bg:#FFFFFF;
+  --bg2:#FFFFFF;
+  --bg3:#FFFFFF;
   --panel:#0D1524;
   --line:rgba(255,255,255,.07);
   --line2:rgba(255,255,255,.14);
